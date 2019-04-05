@@ -16,9 +16,13 @@ python combine_A_B.py --fold_A ./GOPRO_Large/blur_all_test --fold_B ./GOPRO_Larg
 
 ## Train 
 
+Put train and test datasets under ./datasets/Blurry/
+
 python main.py --phase train --gpu 0 --add_noise False
 
 python plot_loss.py 
+
+Trained weights will be available soon.
 
 
 ## Test and save test results
@@ -31,14 +35,23 @@ python main.py --phase test --fine_size 360
 python main.py --phase test --fine_size 360 --test_psnr True
 
 ## Citation
-@article {DarkChannelGAN:2019,
-title = "GAN based image deblurring using dark channel prior",
-journal = "Fast track article for IS\&T International Symposium on Electronic Imaging 2019: Computational Imaging XVII proceedings.",
-year = "2019",
-itemtype = "ARTICLE",
-issn = "2470-1173",
-pages = {136-1--136-5},
-eissn = "2470-1173",
+@article {DarkChannelGAN:2019, \
+title = "GAN based image deblurring using dark channel prior", 
+
+journal = "Fast track article for IS\&T International Symposium on Electronic Imaging 2019: Computational Imaging XVII proceedings.", 
+
+year = "2019", 
+
+itemtype = "ARTICLE", 
+
+issn = "2470-1173", 
+
+pages = {136-1--136-5}, 
+
+eissn = "2470-1173", 
+
 doi = "doi:10.2352/ISSN.2470-1173.2019.13.COIMG-136",
+
 author = "Zhang, Shuang and Zhen, Ada and Stevenson, Robert L.",
+
 }
